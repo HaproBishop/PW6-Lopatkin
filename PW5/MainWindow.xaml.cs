@@ -75,26 +75,16 @@ namespace PW5
 
         private void FirstValue_GotFocus(object sender, RoutedEventArgs e)
         {
-            Calculate.IsDefault = false;
-            CalculateIncremention.IsDefault = true;
-        }
-
-        private void SecondValue_GotFocus(object sender, RoutedEventArgs e)
-        {
-            Calculate.IsDefault = false;
-            CalculateIncremention.IsDefault = true;
-        }
-
-        private void ThirdValue_GotFocus(object sender, RoutedEventArgs e)
-        {
-            Calculate.IsDefault = true;
-            CalculateIncremention.IsDefault = false;
-        }
-
-        private void ForthValue_GotFocus(object sender, RoutedEventArgs e)
-        {
-            Calculate.IsDefault = true;
-            CalculateIncremention.IsDefault = false;
+            if (e.Source == FirstValue || e.Source == SecondValue)
+            {
+                Calculate.IsDefault = false;
+                CalculateIncremention.IsDefault = true;
+            }
+            else
+            {
+                Calculate.IsDefault = true;
+                CalculateIncremention.IsDefault = false;
+            }
         }
 
         private void CalculateIncremention_Click(object sender, RoutedEventArgs e)
@@ -119,7 +109,8 @@ namespace PW5
         {
             if(isemptystring == true)
                 MessageBox.Show("У вас некорректно введены значения для проведения произведения! Подробности об особенностях работы программы написаны в справке!", "ОШИБКА!", MessageBoxButton.OK, MessageBoxImage.Error);
-            else MessageBox.Show("У вас введены нечетные(ое) числа(о)! Пожалуйства, введите значения в соответствии с требованиями!", "ОШИБКА!", MessageBoxButton.OK, MessageBoxImage.Error);
+            else 
+                MessageBox.Show("У вас введены нечетные(ое) числа(о)! Пожалуйства, введите значения в соответствии с требованиями!", "ОШИБКА!", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibPair
 {/// <summary>
-/// Класс, производящий умножение пары четных чисел
+/// Класс, производящий умножение пары четных чисел и инкременцию
 /// </summary>
     public class Pair
     {        
@@ -95,10 +95,15 @@ namespace LibPair
             }
             else return null;
         }
-        public static Pair operator ++(Pair value1)
+        /// <summary>
+        /// Инкременция (a, b) = (a + b, b)
+        /// </summary>
+        /// <param name="value">value - объект, несущий с собой значения первого и второго чисел</param>
+        /// <returns>null - при отсутствии четных чисел, new Pair { Value1 = value.Value1 + value.Value2 }- при наличии четных чисел</returns>
+        public static Pair operator ++(Pair value)
         {
-            if (value1.Value1 % 2 == 0 && value1.Value2 % 2 == 0)
-                return new Pair { Value1 = value1.Value1 + value1.Value2 };
+            if (value.Value1 % 2 == 0 && value.Value2 % 2 == 0)
+                return new Pair { Value1 = value.Value1 + value.Value2 };
             else return null;
         }
     }

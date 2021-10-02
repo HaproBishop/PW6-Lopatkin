@@ -20,11 +20,11 @@
             <Grid>
                 <TextBox x:Name="FirstValue" HorizontalAlignment="Left" Height="23" Margin="126,13,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="FirstValue_GotFocus"/>
                 <Label Content="Первое число -" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="SecondValue" HorizontalAlignment="Left" Height="23" Margin="126,44,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="SecondValue_GotFocus"/>
+                <TextBox x:Name="SecondValue" HorizontalAlignment="Left" Height="23" Margin="126,44,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="FirstValue_GotFocus"/>
                 <Label Content="Второе число -" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="ThirdValue" HorizontalAlignment="Left" Height="23" Margin="126,75,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="ThirdValue_GotFocus"/>
+                <TextBox x:Name="ThirdValue" HorizontalAlignment="Left" Height="23" Margin="126,75,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="FirstValue_GotFocus"/>
                 <Label Content="Третье число -" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="ForthValue" HorizontalAlignment="Left" Height="23" Margin="126,106,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="ForthValue_GotFocus"/>
+                <TextBox x:Name="ForthValue" HorizontalAlignment="Left" Height="23" Margin="126,106,0,0" VerticalAlignment="Top" Width="77" MaxLength="5" TextChanged="FirstValue_TextChanged" GotFocus="FirstValue_GotFocus"/>
                 <Label Content="Четвертое число -" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
