@@ -52,7 +52,39 @@ namespace LibPair
         /// </summary>
         /// <returns>Result - массив, где Result[0] - первое произведение, а Result[1] - второе произведение; Иначе - null, если числа не являются четными</returns>
         public int[] PairCalculateWithObject()
-        {            
+        {
+            return PairCalculateWirhObjectAction();
+        }
+
+        public int[] PairCalculateWithObject(int value1)
+        {
+            Value1 = value1;
+            return PairCalculateWirhObjectAction();
+        }
+        public int[] PairCalculateWithObject(int value1, int value2)
+        {
+            Value1 = value1;
+            Value2 = value2;
+            return PairCalculateWirhObjectAction();
+        }
+        public int[] PairCalculateWithObject(int value1, int value2, int value3)
+        {
+            Value1 = value1;
+            Value2 = value2;
+            Value3 = value3;
+            return PairCalculateWirhObjectAction();
+        }
+        public int[] PairCalculateWithObject(int value1, int value2, int value3, int value4)
+        {
+            Value1 = value1;
+            Value2 = value2;
+            Value3 = value3;
+            Value4 = value4;
+            return PairCalculateWirhObjectAction();
+        }
+
+        private int[] PairCalculateWirhObjectAction()
+        {
             if (ProveValuesEvenWithObject() == true)
             {
                 Result = new int[2];
