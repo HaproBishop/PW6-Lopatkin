@@ -62,11 +62,13 @@ namespace PW5
             bool ProveValue4 = int.TryParse(ForthValue.Text, out int value4);
             if (ProveValue1 == true && ProveValue2 == true && ProveValue3 == true && ProveValue4 == true)
             {
-                int[] mas = Pair.PairCalculateWithoutObject(value1, value2, value3, value4);
-                if (mas != null)
+                Pair result = new Pair(value1, value2);
+                Pair pairobject = new Pair(value3, value4);
+                result.PairCalculate(pairobject);
+                if (result.Result != null)
                 {
-                    FirstResult.Text = mas[0].ToString();
-                    SecondResult.Text = mas[1].ToString();
+                    FirstResult.Text = result.Result[0].ToString();
+                    SecondResult.Text = result.Result[1].ToString();
                 }
                 else MessageForUser(false);
             }
