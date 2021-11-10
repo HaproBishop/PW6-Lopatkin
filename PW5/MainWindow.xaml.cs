@@ -30,7 +30,7 @@ namespace PW5
         {
             InitializeComponent();
         }
-        Pair result = new Pair();
+        Pair result;
         Pair firstpair = new Pair();
         Pair secondpair = new Pair();
         private void Support_Click(object sender, RoutedEventArgs e)
