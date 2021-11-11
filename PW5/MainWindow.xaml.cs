@@ -71,7 +71,7 @@ namespace PW5
             {
                 firstpair.AddValue(value1, value2);
                 secondpair.AddValue(value3, value4);
-                result = firstpair.PairCalculate(secondpair);//Занесение результатов в объект result
+                result = firstpair*secondpair;//Занесение результатов в объект result
                 FirstResult.Text = result.Value1.ToString();//Вывод результатов
                 SecondResult.Text = result.Value2.ToString();
             }

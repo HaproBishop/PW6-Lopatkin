@@ -80,5 +80,9 @@ namespace LibPair
         {            
                 return new Pair(value.Value1, value.Value2) { Value1 = value.Value1 + value.Value2};            
         }
+        public static Pair operator *(Pair firstpair, Pair secondpair)
+        {
+                return new Pair(firstpair.Value1 * secondpair.Value1, firstpair.Value2 * secondpair.Value2);
+        }
     }
 }
